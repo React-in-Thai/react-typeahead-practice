@@ -27,6 +27,7 @@ Create high quality react typeahead application.
 ## API
 
 - https://api.github.com/search/users?q=name
+- https://api.github.com/search/repositories?q=react
 
 ## Get started
 
