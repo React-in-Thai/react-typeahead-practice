@@ -3,6 +3,7 @@ import "./tailwind.build.css";
 
 import TextInput from "./components/TextInput";
 import Avatar from "./components/Avatar";
+import Repository from "./components/Repository";
 
 function App() {
   return (
@@ -27,6 +28,22 @@ function App() {
             <Avatar src="https://avatars0.githubusercontent.com/u/18292247?s=120" />
             <caption className="text-center font-bold text-gray-500 text-base block py-8 pointer-events-none">
               Avatar
+            </caption>
+          </div>
+          <div className="w-1/4 max-w-full text-center">
+            <Repository
+              title="facebook/react"
+              language="Javascript"
+              starCount={158691}
+              owner={{
+                name: "facebook",
+                avatar: "https://avatars3.githubusercontent.com/u/69631?v=4",
+              }}
+              repoUrl="https://github.com/facebook/react"
+              homepageUrl="https://reactjs.org"
+            />
+            <caption className="text-center font-bold text-gray-500 text-base block py-8 pointer-events-none">
+              Repository
             </caption>
           </div>
         </div>
