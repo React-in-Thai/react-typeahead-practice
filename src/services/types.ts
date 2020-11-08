@@ -58,11 +58,11 @@ interface Item {
   ssh_url: string;
   clone_url: string;
   svn_url: string;
-  homepage?: string;
+  homepage?: string | null;
   size: number;
   stargazers_count: number;
   watchers_count: number;
-  language?: string;
+  language?: string | null;
   has_issues: boolean;
   has_projects: boolean;
   has_downloads: boolean;
@@ -73,7 +73,7 @@ interface Item {
   archived: boolean;
   disabled: boolean;
   open_issues_count: number;
-  license?: License;
+  license?: License | null;
   forks: number;
   open_issues: number;
   watchers: number;
@@ -106,6 +106,6 @@ interface License {
   key: string;
   name: string;
   spdx_id: string;
-  url?: string;
+  url?: string | null;
   node_id: string;
 }

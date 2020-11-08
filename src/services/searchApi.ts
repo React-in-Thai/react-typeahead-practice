@@ -9,11 +9,14 @@ githubClient.interceptors.response.use(function (response) {
 });
 
 export const searchRepositories = async (
-  repoName: string
+  repoName: string,
+  page: number = 1
 ): Promise<SearchRepositoriesResponse> => {
   return await githubClient.get("/search/repositories", {
     params: {
       q: repoName,
+      per_page: 10,
+      page
     },
   });
 };
@@ -22,6 +25,7 @@ export const searchUsers = async (name: string) => {
   return await githubClient.get("/search/users", {
     params: {
       q: name,
+      per_page: 10
     },
   });
 };
