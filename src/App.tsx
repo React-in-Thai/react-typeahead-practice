@@ -7,15 +7,12 @@ import Repository from "./components/Repository";
 import Screen from './components/Screen';
 import SearchHelpUI from './components/SearchHelpUI';
 import SearchNoResult from './components/SearchNoResult';
+import RepoTypeahead from "./solution/RepoTypeahead";
 
 function App() {
   return (
     <div className="App">
-      <div className="min-h-screen">
-        <h1 className="h-full min-h-screen flex items-center justify-center text-5xl">
-          Implement Typeahead Component Here!
-        </h1>
-      </div>
+      <RepoTypeahead />
       <div className="pb-32 bg-gray-200">
         <caption className="text-center font-bold text-gray-500 text-xl block pt-8 pb-16 pointer-events-none">
           List of reusable components
