@@ -4,6 +4,7 @@ import "./tailwind.build.css";
 import TextInput from "./components/TextInput";
 import Avatar from "./components/Avatar";
 import Repository from "./components/Repository";
+import Screen from './components/Screen';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           List of reusable components
         </caption>
         <div className="flex flex-wrap gap-8 container mx-auto">
-          <div className="w-1/4 max-w-full">
+          <div className="w-1/3 max-w-full">
             <TextInput placeholder="Type a name" />
             <caption className="text-center font-bold text-gray-500 text-base block py-8 pointer-events-none">
               TextInput
@@ -30,7 +31,7 @@ function App() {
               Avatar
             </caption>
           </div>
-          <div className="w-1/4 max-w-full text-center">
+          <div className="w-1/3 flex-1 max-w-full text-center">
             <Repository
               title="facebook/react"
               language="Javascript"
@@ -44,6 +45,12 @@ function App() {
             />
             <caption className="text-center font-bold text-gray-500 text-base block py-8 pointer-events-none">
               Repository
+            </caption>
+          </div>
+          <div className="flex-shrink-0 w-full max-w-full text-center">
+            <Screen />
+            <caption className="text-center font-bold text-gray-500 text-base block py-8 pointer-events-none">
+              Screen
             </caption>
           </div>
         </div>
