@@ -5,6 +5,8 @@ import TextInput from "./components/TextInput";
 import Avatar from "./components/Avatar";
 import Repository from "./components/Repository";
 import Screen from './components/Screen';
+import SearchHelpUI from './components/SearchHelpUI';
+import SearchNoResult from './components/SearchNoResult';
 
 function App() {
   return (
@@ -47,10 +49,22 @@ function App() {
               Repository
             </caption>
           </div>
-          <div className="flex-shrink-0 w-full max-w-full text-center">
+          <div className="flex-shrink-0 w-1/2 max-w-full text-center">
             <Screen />
             <caption className="text-center font-bold text-gray-500 text-base block py-8 pointer-events-none">
               Screen
+            </caption>
+          </div>
+          <div className="w-1/4 flex-1 max-w-full text-center">
+            <SearchHelpUI />
+            <caption className="text-center font-bold text-gray-500 text-base block py-8 pointer-events-none">
+              Search help UI
+            </caption>
+          </div>
+          <div className="w-1/4 flex-1 max-w-full text-center">
+            <SearchNoResult />
+            <caption className="text-center font-bold text-gray-500 text-base block py-8 pointer-events-none">
+              No Result
             </caption>
           </div>
         </div>
