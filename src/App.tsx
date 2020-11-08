@@ -7,6 +7,7 @@ import Repository from "./components/Repository";
 import Screen from './components/Screen';
 import SearchHelpUI from './components/SearchHelpUI';
 import SearchNoResult from './components/SearchNoResult';
+import Loader from './components/Loader';
 
 function App() {
   return (
@@ -47,6 +48,12 @@ function App() {
             />
             <caption className="text-center font-bold text-gray-500 text-base block py-8 pointer-events-none">
               Repository
+            </caption>
+          </div>
+          <div className="w-1/4 max-w-full text-center">
+            <Loader />
+            <caption className="text-center font-bold text-gray-500 text-base block py-8 pointer-events-none">
+              Loader
             </caption>
           </div>
           <div className="flex-shrink-0 w-1/2 max-w-full text-center">
