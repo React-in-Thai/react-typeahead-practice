@@ -1,13 +1,16 @@
 import axios from "axios";
+import { SearchRepoitoriesResponse } from "./types";
 
 const githubClient = axios.create({
   baseURL: "https://api.github.com",
 });
 githubClient.interceptors.response.use(function (response) {
-  return response.data
-})
+  return response.data;
+});
 
-export const searchRepositories = async (repoName: string) => {
+export const searchRepositories = async (
+  repoName: string
+): Promise<SearchRepoitoriesResponse> => {
   return await githubClient.get("/search/repositories", {
     params: {
       q: repoName,
